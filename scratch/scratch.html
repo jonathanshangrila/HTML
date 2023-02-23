@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<body style="background-color:PowderBlue;">
+</body>
+
+<h1>Shangri-La Music CD & Vinyl</h1>
+
+<h3>A Limited Liability Company</h3>
+
+<p>Your favorite music listening preferences mailed directly to you!</p>
+
+<!--<head>-->
+<!--    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />-->
+<!--    <script defer src="https://pyscript.net/latest/pyscript.js"></script>-->
+<!--</head>-->
+<!--<body>-->
+<!--<py-script>-->
+<!--    print('Shangri-La Spotify to Python Interpreter, hosted on HTML')-->
+<!--</py-script>-->
+<!--</body>-->
+
+<img src="/Users/jonathantran/WebstormProjects/untitled/img/start_screen_ios.png" alt="iOS App in Development">
+
+<img src="/Users/jonathantran/WebstormProjects/untitled/img/python_parse_data_spotify_1.png" alt="Python Spotify data reading">
+
+<!--<img src="/Users/jonathantran/WebstormProjects/untitled/img/python_parse_data_spotify_2.png" alt="Python Spotify data reading">-->
+
+<!--<img src="/Users/jonathantran/WebstormProjects/untitled/img/android_screen.png" alt="Android Alphabet G screen">-->
+
+<!--<p>Spotify</p>-->
+
+<!--Embed Python interpreter onto web page-->
+
+<!--ENTER ARTIST NAME HERE TO SEE IF STRING DATA PROCESSES INTO HTML PYSCRIPT PAGE-->
+
+<form action="/html/tags/html_form_tag_action.cfm" method="get">
+    Profile username:
+    <input type="text" name="artist_name" value="" maxlength="100" />
+    <br />
+
+    Spotify Profile ID:
+    <input type="text" name="spotify_id" value="" maxlength="100" />
+    <br />
+    <input type="submit" value="Submit" />
+</form>
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>pyscript section</title>
+    <!-- linking to PyScript assets -->
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+</head>
+
+<!--<body>-->
+<!-- Put Python code inside the <py-script> tag -->
+    <py-script>user_input = input()</py-script>
+    <br> <br>
+    <py-script>print(user_input)</py-script>
+
+    <py-script>
+    #################################################
+    ## Spotipy Quickstart from ReadTheDocs
+    ## https://pypi.org/project/spotipy/
+    #################################################
+
+    ## Parses top tracks from an Artist and outputs the data into Python Shell terminal
+
+    ## /Users/jonathantran/Desktop/shangriLaCDVinyl-main/spotipy
+        
+    import spotipy
+    from spotipy.oauth2 import SpotifyClientCredentials
+    sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id="2d654f4b2613491fa490239c10426f0a",
+    client_secret="f876b42b91a24ecf89418a5cefea0a09"))
+
+    number_of_tracks = 10
+
+    results = sp.search(q='Journey', limit=number_of_tracks)
+
+    ## for loop has been condensed and 'track', 'audio', and 'cover art' have been included into the idx for loop
+    for idx, track in enumerate(results['tracks']['items']):
+        print(idx, track['name'])
+        print('track    : ' + track['name'])
+        print('audio    : ' + track['preview_url'])
+        print('cover art: ' + track['album']['images'][0]['url'])
+        print()
+    </py-script>
+
+<!--    <py-script src="/Users/jonathantran/Desktop/shangriLaCDVinyl-main/shangri_la_app_main.py"></py-script>-->
+
+<!--</body>-->
+<!--</html>-->
+
+<!--&lt;!&ndash;<!DOCTYPE html>&ndash;&gt;-->
+<!--&lt;!&ndash;<html lang="en">&ndash;&gt;-->
+<!--<head>-->
+<!--    <meta charset="utf-8" />-->
+<!--    <meta name="viewport" content="width=device-width,initial-scale=1" />-->
+
+<!--    <title>Custom REPL Example</title>-->
+
+<!--    <link rel="icon" type="image/png" href="favicon.png" />-->
+<!--    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />-->
+<!--    <link rel="stylesheet" href="repl.css" />-->
+<!--    <link rel="stylesheet" href="./assets/css/examples.css" />-->
+<!--    <script defer src="https://pyscript.net/latest/pyscript.js"></script>-->
+<!--</head>-->
+
+<br> <br>
+
+<p></p>
+<a href="https://www.spotify.com/">Spotify</a>
+
+<!--<p>Apple Music</p>-->
+<p></p>
+<a href="https://music.apple.com/">Apple Music</a>
+
+<!--<p>Tidal</p>-->
+<p></p>
+<a href="https://tidal.com/">Tidal</a>
+
+<!--<p>Pandora Music</p>-->
+<p></p>
+<a href="https://www.pandora.com/">Pandora Music</a>
+
+<!--<p>Amoeba Music</p>-->
+<p></p>
+<a href="https://www.amoeba.com/">Amoeba Music</a>
+
+<!--<p>Rasputin Music</p>-->
+<p></p>
+<a href="http://www.rasputinmusic.com/">Rasputin Music</a>
+
+<!--<p>Tower Records</p>-->
+<p></p>
+<a href="https://towerrecords.com">Tower Records</a>
+
+<!--<p>Kickstarter Campaign</p>-->
+<p></p>
+<a href="https://www.kickstarter.com/projects/jonathantatran/936408373?ref=4gg61x&token=7f857b68">Kickstarter Campaign</a>
+
+<p></p>
+<a href="/Users/jonathantran/Library/Application Support/JetBrains/WebStorm2022.3/scratches/scratch_private_cd_vinyl_catalog.html">M-Town private catalog of CDs and Vinyl</a>
+
+<!--<p>FedEx</p>-->
+<p></p>
+<a href="https://www.fedex.com/en-us/home.html">FedEx</a>
+
+<p>Pending</p>
+
+<p>Login to your account here.</p>
+
+<p>Forgot your password?</p>
+
+<head>
+    <title>Checkout</title>
+</head>
+<body>
+<form action="/create-checkout-session" method="POST">
+    <!-- Note: If using PHP set the action to /create-checkout-session.php -->
+
+    <input type="hidden" name="priceId" value="price_G0FvDp6vZvdwRZ" />
+    <button type="submit">Checkout</button>
+</form>
+</body>
+
+<h4>3:16</h4>
+
+<head>
+    <title>Buy cool new product</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?version=3.52.1&features=fetch"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+</head>
+
+<section>
+    <div class="product">
+        <img src="https://i.imgur.com/EHyR2nP.png" alt="The cover of Stubborn Attachments" />
+        <div class="description">
+            <h3>Stubborn Attachments</h3>
+            <h5>$20.00</h5>
+        </div>
+    </div>
+    <form action="/create-checkout-session" method="POST">
+        <button type="submit" id="checkout-button">Checkout</button>
+    </form>
+</section>
+
+</body>
+</html>
+
+
+
+
